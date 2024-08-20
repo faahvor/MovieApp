@@ -1,7 +1,7 @@
 import { useState } from "react";
-import data from "../assets/mockData.json";
+import data from "../assets/Data.json";
 import BlogCard from "../components/BlogCard";
-
+import { Outlet } from "react-router-dom";
 
 const Blog = () => {
   const [blogPosts] = useState(data?.blogPosts);
