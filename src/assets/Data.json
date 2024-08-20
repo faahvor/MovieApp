@@ -1,0 +1,124 @@
+{
+    "blogPosts": [
+      {
+        "id": 1,
+        "title": "The Future of Artificial Intelligence: What's Next?",
+        "description": "Explore the latest advancements in AI and what the future holds for this rapidly evolving technology.",
+        "image": "https://images.pexels.com/photos/5473957/pexels-photo-5473957.jpeg"
+      },
+      {
+        "id": 2,
+        "title": "Top 10 Must-Have Gadgets in 2024",
+        "description": "A roundup of the most innovative and essential gadgets you need to know about this year.",
+        "image": "https://images.pexels.com/photos/5076519/pexels-photo-5076519.jpeg"
+      },
+      {
+        "id": 3,
+        "title": "How Blockchain is Revolutionizing Industries Beyond Cryptocurrency",
+        "description": "Discover how blockchain technology is impacting industries like healthcare, finance, and supply chain.",
+        "image": "https://images.pexels.com/photos/8369525/pexels-photo-8369525.jpeg"
+      },
+      {
+        "id": 4,
+        "title": "The Rise of Quantum Computing: A Beginner’s Guide",
+        "description": "An introduction to quantum computing and how it differs from traditional computing methods.",
+        "image": "https://images.pexels.com/photos/97084/pexels-photo-97084.jpeg"
+      },
+      {
+        "id": 5,
+        "title": "Cybersecurity in the Age of Remote Work: Best Practices",
+        "description": "Learn how to protect your data and privacy while working remotely in today's digital world.",
+        "image": "https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg"
+      },
+      {
+        "id": 6,
+        "title": "5G Technology: Transforming Communication and Connectivity",
+        "description": "How 5G networks are revolutionizing the way we connect and communicate in the modern world.",
+        "image": "https://images.pexels.com/photos/7127869/pexels-photo-7127869.jpeg"
+      },
+      {
+        "id": 7,
+        "title": "The Evolution of Virtual Reality: Where Are We Now?",
+        "description": "A look at the current state of virtual reality technology and its potential future developments.",
+        "image": "https://images.pexels.com/photos/7578601/pexels-photo-7578601.jpeg"
+      },
+      {
+        "id": 8,
+        "title": "Sustainable Tech: Green Innovations Shaping the Future",
+        "description": "Explore how technology is driving sustainability and creating a greener future for all.",
+        "image": "https://images.pexels.com/photos/1159160/pexels-photo-1159160.jpeg"
+      },
+      {
+        "id": 9,
+        "title": "How Augmented Reality is Changing the Retail Experience",
+        "description": "Discover how AR is transforming the shopping experience and what it means for consumers and businesses.",
+        "image": "https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg"
+      },
+      {
+        "id": 10,
+        "title": "Exploring the Internet of Things: Connected Devices in Daily Life",
+        "description": "An overview of how IoT devices are becoming an integral part of our everyday lives.",
+        "image": "https://images.pexels.com/photos/5380652/pexels-photo-5380652.jpeg"
+      },
+      {
+        "id": 11,
+        "title": "The Role of Big Data in Healthcare: Improving Patient Outcomes",
+        "description": "How big data is transforming healthcare by improving patient care and outcomes.",
+        "image": "https://images.pexels.com/photos/6692905/pexels-photo-6692905.jpeg"
+      },
+      {
+        "id": 12,
+        "title": "The Ethics of AI: Balancing Innovation and Responsibility",
+        "description": "A discussion on the ethical considerations of AI development and its impact on society.",
+        "image": "https://images.pexels.com/photos/4665080/pexels-photo-4665080.jpeg"
+      },
+      {
+        "id": 13,
+        "title": "Advancements in Robotics: From Factories to Homes",
+        "description": "An exploration of how robotics is evolving from industrial applications to everyday household use.",
+        "image": "https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg"
+      },
+      {
+        "id": 14,
+        "title": "The Impact of 3D Printing on Manufacturing and Design",
+        "description": "Learn how 3D printing is changing the landscape of manufacturing and design industries.",
+        "image": "https://images.pexels.com/photos/776119/pexels-photo-776119.jpeg"
+      },
+      {
+        "id": 15,
+        "title": "Understanding Cloud Computing: Benefits and Challenges",
+        "description": "An in-depth look at cloud computing, its advantages, and the challenges it presents.",
+        "image": "https://images.pexels.com/photos/2261036/pexels-photo-2261036.jpeg"
+      },
+      {
+        "id": 16,
+        "title": "Tech for Good: How Technology is Driving Social Change",
+        "description": "Explore the ways in which technology is being used to address social issues and create positive change.",
+        "image": "https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg"
+      },
+      {
+        "id": 17,
+        "title": "The Role of Artificial Intelligence in Smart Cities",
+        "description": "How AI is being integrated into smart city initiatives to improve urban living.",
+        "image": "https://images.pexels.com/photos/258447/pexels-photo-258447.jpeg"
+      },
+      {
+        "id": 18,
+        "title": "The Evolution of Mobile Apps: Trends to Watch in 2024",
+        "description": "A look at emerging trends in mobile app development and what to expect in the near future.",
+        "image": "https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg"
+      },
+      {
+        "id": 19,
+        "title": "Exploring the World of Wearable Tech: What's New?",
+        "description": "Discover the latest advancements in wearable technology and how they are changing our lives.",
+        "image": "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg"
+      },
+      {
+        "id": 20,
+        "title": "The Future of Autonomous Vehicles: Opportunities and Challenges",
+        "description": "An exploration of the potential and challenges of autonomous vehicles in the coming years.",
+        "image": "https://images.pexels.com/photos/1216589/pexels-photo-1216589.jpeg"
+      }
+    ]
+  }
