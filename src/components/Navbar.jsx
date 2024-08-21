@@ -14,8 +14,9 @@ const Navbar = () => {
   };
   return (
     <nav className="absolute w-full top-3 flex justify-between items-center pr-8">
-      <ul className="flex justify-around w-full text-2xl">
-        <li>
+      <ul className={`flex justify-around w-full text-2xl ${darkMode ? " text-white":" text-black"}`}>
+     
+    <li  >
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -42,7 +43,9 @@ const Navbar = () => {
       <span
         className={` ${
           pathname == "/settings" ? "text-white" : "text-black"
-        } mt-1 text-2xl`}
+        } mt-1 text-2xl ${
+          pathname == "/blog" ? "text-green-400" : "text-black"
+        } mt-1 text-2xl `}
         onClick={handleClick}
       >
         {darkMode ? <GiMoonBats /> : <CiLight />}
