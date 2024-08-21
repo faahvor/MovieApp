@@ -16,9 +16,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         {/* nested route */}
-        <Route path="/blog" element={<Blog />}/>
+        <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="*" element={<Error404></Error404>} />
+        <Route path="*" element={<Error404/>} />
       </Routes>
       <footer className="text-center font-semibold">Created by Avuwa </footer>
     </div>

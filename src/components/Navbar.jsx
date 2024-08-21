@@ -1,25 +1,54 @@
-import { Link } from "react-router-dom"
+/* eslint-disable no-unused-vars */
+import { Link, useLocation } from "react-router-dom";
+import { CiLight } from "react-icons/ci";
+import { GiMoonBats } from "react-icons/gi";
+
+import { useContext } from "react";
+import ThemeContext from "../contexts/ThemeContext";
 
 const Navbar = () => {
-    return (
-        <nav className="absolute w-full top-3" >
-          <ul className="flex justify-around text-2xl">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-    
-          </ul>
-        </nav>
-      )
-    }
+  const { darkMode, setDarkMode,pathname } = useContext(ThemeContext);
 
-export default Navbar
+  const handleClick = () => {
+    setDarkMode(!darkMode);
+  };
+  return (
+    <nav className="absolute w-full top-3 flex justify-between items-center pr-8">
+      <ul className="flex justify-around w-full text-2xl">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link
+            to={{
+              pathname: "/settings",
+              search: "?sort=date",
+              state: { fromHome: true },
+            }}
+          >
+            Settings
+          </Link>
+        </li>
+      </ul>
+      <span
+        className={` ${
+          pathname == "/settings" ? "text-white" : "text-black"
+        } mt-1 text-2xl`}
+        onClick={handleClick}
+      >
+        {darkMode ? <GiMoonBats /> : <CiLight />}
+      </span>
+    </nav>
+  );
+};
+
+export default Navbar;
