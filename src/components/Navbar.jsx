@@ -7,16 +7,19 @@ import { useContext } from "react";
 import ThemeContext from "../contexts/ThemeContext";
 
 const Navbar = () => {
-  const { darkMode, setDarkMode,pathname } = useContext(ThemeContext);
+  const { darkMode, setDarkMode, pathname } = useContext(ThemeContext);
 
   const handleClick = () => {
     setDarkMode(!darkMode);
   };
   return (
     <nav className="absolute w-full top-3 flex justify-between items-center pr-8">
-      <ul className={`flex justify-around w-full text-2xl ${darkMode ? " text-white":" text-black"}`}>
-     
-    <li  >
+      <ul
+        className={`flex justify-around w-full text-2xl ${
+          darkMode ? " text-white" : " text-black"
+        }`}
+      >
+        <li>
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -39,6 +42,14 @@ const Navbar = () => {
             Settings
           </Link>
         </li>
+        <div className="flex gap-4 *:bg-gray-200 *:rounded-md *:px-3 *:py-1 text-sm">
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+          <li>
+            <Link to="/register">Register</Link>
+          </li>
+        </div>
       </ul>
       <span
         className={` ${

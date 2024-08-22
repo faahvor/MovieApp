@@ -5,3 +5,15 @@ h1{
   font-size: 8rem;
   font-weight: 700;
 }
+@font-face {
+  font-family: "Aeonik-bold";
+  src: url("../src/assets/font/AeonikTRIAL-Bold.otf");
+}
+@font-face {
+  font-family: "Aeonik-regular";
+  src: url("../src/assets/font/AeonikTRIAL-Regular.otf");
+}
+@font-face {
+  font-family: "Aeonik-light";
+  src: url("../src/assets/font/AeonikTRIAL-Light.otf");
+}
