@@ -19,37 +19,39 @@ const Navbar = () => {
           darkMode ? " text-white" : " text-black"
         }`}
       >
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-        <li>
-          <Link
-            to={{
-              pathname: "/settings",
-              search: "?sort=date",
-              state: { fromHome: true },
-            }}
-          >
-            Settings
-          </Link>
-        </li>
-        <div className="flex gap-4 *:bg-gray-200 *:rounded-md *:px-3 *:py-1 text-sm">
+        {pathname.includes(["register","login"]) ? (null):( <>
           <li>
-            <Link to="/login">Login</Link>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/register">Register</Link>
+            <Link to="/about">About</Link>
           </li>
-        </div>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link
+              to={{
+                pathname: "/settings",
+                search: "?sort=date",
+                state: { fromHome: true },
+              }}
+            >
+              Settings
+            </Link>
+          </li>
+          <div className="flex gap-4 *:bg-gray-200 *:rounded-md *:px-3 *:py-1 text-sm">
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/register">Register</Link>
+            </li>
+          </div>
+          </>)}
       </ul>
       <span
         className={` ${
