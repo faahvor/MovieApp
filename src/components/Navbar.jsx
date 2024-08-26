@@ -12,6 +12,9 @@ const Navbar = () => {
   const handleClick = () => {
     setDarkMode(!darkMode);
   };
+  if (pathname.includes("register") || pathname.includes("login")) {
+    return null;
+  }
   return (
     <nav className="absolute w-full top-3 flex justify-between items-center pr-8">
       <ul
@@ -19,39 +22,42 @@ const Navbar = () => {
           darkMode ? " text-white" : " text-black"
         }`}
       >
-        {pathname.includes(["register","login"]) ? (null):( <>
+         (
+          <>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li>
+          <Link
+            to={{
+              pathname: "/settings",
+              search: "?sort=date",
+              state: { fromHome: true },
+            }}
+          >
+            Settings
+          </Link>
+        </li>
+        <div className="flex gap-4 *:bg-gray-200 *:rounded-md *:px-3 *:py-1 text-sm">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/login">Login</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/register">Register</Link>
           </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li>
-            <Link
-              to={{
-                pathname: "/settings",
-                search: "?sort=date",
-                state: { fromHome: true },
-              }}
-            >
-              Settings
-            </Link>
-          </li>
-          <div className="flex gap-4 *:bg-gray-200 *:rounded-md *:px-3 *:py-1 text-sm">
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-            <li>
-              <Link to="/register">Register</Link>
-            </li>
-          </div>
-          </>)}
+        </div>
+        </>
+        
+        
       </ul>
       <span
         className={` ${
